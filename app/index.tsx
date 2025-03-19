@@ -1,21 +1,26 @@
-import { View, Text, StyleSheet } from 'react-native';
+// Aqui começa os imports
+import {View, Text, StyleSheet} from 'react-native';
+import Component from './componenente';
 
+// Aqui começa o app
 export default function App(){
 
+  // Aqui começa o body
   return( 
-    <View style={css.caixa}>
-      <Text style={css.titulo}>Meu App Mobile</Text>
-      <Text style={css.titulo}>(virus.com.senai.apk)</Text>
+    <View style={styles.central}>
+      <Text style={styles.titulo}>Conversor de Moedas</Text>
+      <Component/>
     </View>
   );
 
 };
 
-const css = StyleSheet.create({
+// Aqui começa o styles
+const styles = StyleSheet.create({
 
-  caixa:{
+  central:{
     flex:1,
-    backgroundColor:'purple',
+    backgroundColor:'darkgray',
     justifyContent: 'center',
     alignItems: 'center',
   },
